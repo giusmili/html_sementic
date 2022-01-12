@@ -30,6 +30,7 @@ blockquote, h1, h2, h3, address{
 button{
     background: transparent;
     font-size: inherit;
+    border: 0;
 }
 a{
     text-decoration: none;

@@ -57,7 +57,7 @@ header h1{
      color: var(--colors-theme-s);
 }
 main{
-    max-width: 80rem;
+    max-width: 90rem;
     margin: 5rem auto 2rem;
 }
 section{
