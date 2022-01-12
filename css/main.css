@@ -1,0 +1,89 @@
+/* theme */
+
+:root{
+    --color-theme-d: #000;
+    --colors-theme-b: #2b2a33;
+    --colors-theme-g: #03045e;
+    --colors-theme-s: #0c95df;
+    --colors-theme-c: #caf0f8;
+    --colors-theme-p: #42414d;
+}
+/* create class for button */
+
+.button-primary,
+.button-secondary,
+.button-success,
+.button-default,
+.button-delete{
+    width: 20rem;
+    border-radius: .4rem;
+    line-height: 4.56rem;
+    text-align: center;
+    background-color: #ccc;
+    color: var(--color-theme-d);
+    cursor: pointer;
+    text-shadow: 0 .1rem .1rem rgba(0, 0, 0, 1);
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+
+/* buttom theme */
+
+.button-succes-color{
+    background-color: #1b892c;
+    color: #fff;
+    margin-right: 1rem;
+}
+.button-delete-color{
+    background-color: #D93223;
+    color: #fff;
+}
+
+
+.content-button{
+    margin-bottom: 1rem; 
+}
+
+body{
+    background-color: var(--colors-theme-b);
+}
+header h1{
+     font-family: "Dosis";
+     font-size: 4.5rem;
+     font-weight: 200;
+     text-align: center;
+     text-transform: uppercase;
+     color: var(--colors-theme-s);
+}
+main{
+    max-width: 80rem;
+    margin: 5rem auto 2rem;
+}
+section{
+    margin-bottom: 1rem;
+}
+section h2{
+  font-family: "Just Another Hand";
+  color: var(--colors-theme-s);
+  font-size: 3.5rem;
+  background-color: var(--colors-theme-p);
+  padding: 0 1rem;
+  border-radius: .8rem;
+  font-weight: 200;
+}
+section p, footer *, section address{
+    padding: 1rem;
+    color: var(--colors-theme-c);
+    background-color: var(--colors-theme-d);
+}
+section p, section address{
+    background-color: var(--colors-theme-p);
+    border-radius: .8rem;
+    margin-top: 1rem;
+}
+.content-secondary h2{
+    color: var(--colors-theme-c);
+}
+footer *{
+    text-align: center;
+}
