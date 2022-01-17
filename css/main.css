@@ -28,8 +28,7 @@
 }
 
 /* buttom theme */
-
-.button-succes-color{
+.button-success-color{
     background-color: #1b892c;
     color: #fff;
     margin-right: 1rem;
@@ -49,7 +48,7 @@ body{
     background-color: var(--colors-theme-b);
 }
 header h1{
-     font-family: "Dosis";
+    font-family: 'campus_personal_useregular';
      font-size: 4.5rem;
      font-weight: 200;
      text-align: center;
