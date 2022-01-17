@@ -25,6 +25,7 @@
     text-shadow: 0 .1rem .1rem rgba(0, 0, 0, 1);
     text-transform: uppercase;
     font-size: 1.4rem;
+    
 }
 
 /* buttom theme */
@@ -62,8 +63,8 @@ main{
 section{
     margin-bottom: 1rem;
 }
-section h2{
-  font-family: "Just Another Hand";
+section h2, figure h2{
+font-family: 'badaboom_bbregular';
   color: var(--colors-theme-s);
   font-size: 3.5rem;
   background-color: var(--colors-theme-p);
@@ -84,7 +85,13 @@ section p, section address{
 .content-secondary h2{
     color: var(--colors-theme-c);
 }
-
+.content-secondary h2 i{
+    vertical-align: middle;
+}
+.content-sup h2 i{
+    vertical-align: middle;
+    color: #fff;
+}
 /* section grid */
 .content-logo ul{
     display: grid;
@@ -112,6 +119,50 @@ section p, section address{
 .content-logo ul li:hover figure{
     background-color: rgb(56, 55, 63);
     cursor: pointer;
+}
+/* modal */
+.fullscreen-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+/* cibler la classe dans un élément html */
+.appear:target{
+    z-index: 10;
+    opacity: 1;
+}
+ /* cela permet d'afficher la fenêtre */
+.fullscreen-modal figure{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 40rem;
+    background-color: var(--colors-theme-c);
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    /**/
+    cursor: pointer;
+}
+.fullscreen-modal figure > a{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: #fff;
+    z-index: 2;
+}
+.fullscreen-modal figure h2{
+    background-color: inherit;
+
+}
+.fullscreen-modal figure p, 
+.fullscreen-modal figure h2{
+    padding: 0;
 }
 footer *{
     text-align: center;

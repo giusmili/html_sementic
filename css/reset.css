@@ -43,3 +43,7 @@ img{
     vertical-align: middle;
     object-fit: cover;
 }
+.material-icons{
+    vertical-align: .5rem;
+    font-size: 3rem;
+}
